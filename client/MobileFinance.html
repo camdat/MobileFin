@@ -1,0 +1,105 @@
+<head>
+  <title>Finance Homepage- Mobile</title>
+</head>
+
+<body>
+  {{> finance_homepage}}
+
+</body>
+<template name = 'finance_homepage'>
+<div class = "fi_body_container">
+<header>
+<!-- test slideout -->
+<nav id="menu">
+	<header>
+		<h2>Menu</h2>
+	</header>
+</nav>
+
+<!-- slideout test end -->
+
+<div class = "header_nav">
+  <div class = burger>
+    <a href = "#"><img src = "burger.gif" height = "18px" width = "18px"></a>
+      </div>
+  <div class = "logo">
+  <a href = "MobileFinance.html" > <img src = "logo.png" height = "38px" width = "135px"> </a>
+      </div>
+</div>
+</header>
+
+<!--Search Header Begins-->
+<main id="panel">
+  <header>
+    <button id="togglebtn">☰</button>
+    <h2>Pans</h2>
+  </header>
+
+<div class = "search_header">
+<h1>Discover Your Next Investment</h1>
+<h2> Find the stocks you can invest in, right in your neighborhood. </h2>
+<form autocomplete="off" onsubmit="event.preventDefault();">
+        <div class="fi_mainsearch">
+          <input type="text" name="keyword" class="fi_mainsearch-text" placeholder="Where do you want to invest next?">
+          <button class="fi_searchbtn fa fa-search"></button>
+          <ul class="fi_search_recommendations">
+            <div class="caret-top"></div>
+            <!-- <i class="fa fa-times fi_search_recommendations_close"></i> -->
+          </ul>
+        </div>
+      </form>
+
+</div>
+<!--Search Header Ends-->
+
+<!--Explore Header Begins-->
+
+<div class = "explore">
+<h1> <img src = "map_icon.png" width = "6.4%" height = ".9%"> Explore </h1>
+<h2> Look for public companies near you. </h2>
+
+
+</div>
+<!--Explores Header Ends-->
+<div class = 'citypic_1'> <h1> {CityName}, {State} Home to {Count} Companies </h1>
+</div>
+<div class = 'citypic_2'> <h1> {CityName}, {State} Home to {Count} Companies </h1>
+</div>
+<div class = 'citypic_3'> <h1> {CityName}, {State} Home to {Count} Companies </h1>
+</div>
+
+<!--Feature Header Begins-->
+
+<div class = "features">
+<h1><img src = "pen_icon.png" width = "6.4%" height = ".9%">  Features </h1>
+<h2> Dive deep into key information with these features </h2>
+</div>
+<!--Feature Header Ends-->
+<!--Feature List Begins-->
+<div class = "interactive">
+<h1> Interactive </h1>
+</div>
+
+<div class = "tophund">
+<h1> Top 100 Lists </h1>
+</div>
+
+<div class = "trending">
+<h1> Trending</h1>
+</div>
+</main>
+<!-- Feature List Ends -->
+<!--footer Begins-->
+<div class = "sub_footer">
+  <i class="fa fa-facebook"></i>
+  <i class="fa fa-twitter"></i>
+  <i class="fa fa-linkedin"></i>
+  <i class="fa fa-google-plus"></i>
+  <i class="fa fa-pinterest-p"></i>
+</div>
+<div class = "footer">
+
+</div>
+
+</div>
+</template>

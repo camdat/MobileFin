@@ -1,0 +1,489 @@
+@orange: #f7701d;
+@orange-1: #ff3131;
+@red: #ca1010;
+@yellow: #ffc500;
+@green: #44b224;
+@blue: #3098ff;
+@grey-fail: #999ea6;
+@grey-1: #f2f2f2;
+@grey-2: #dadada;
+@grey-3: #cccccc;
+@grey-4: #272727;
+// End GVFS
+@grey-5: #252525;
+@grey-6: #959595;
+@grey-7: #fefefe;
+@grey-8: #e1e1e1;
+
+// /Header Style
+@fb: #3b5998;
+@twitter: #00aced;
+@gplus: #dd4b39;
+@linkedin: #007bb6;
+@pinterest: #cb2027;
+@clipboard: #f7701d;
+
+// William Mod
+@white: #ffffff;
+@black: #000000;
+
+@bgcolor: #ebebeb;
+
+//icons used globally
+@info-icon: url('/icons/info.png');
+@full-linen: url('/linen_pattern.png');
+@dark-linen: url('/drk-linen.png');
+@tile: url('/Tile_Overlay.png');
+//for unfinished pieces used for the future
+@coming-soon: url('comingsoon-asset.png');
+@coming-soon-frame: url('onframe.png');
+@investkit:url('financial_logo_lg.png');
+@investkit-white:url('Logo_InvestKit.png');
+
+html, body { // Default vals across the board
+  margin-top: auto;
+  font-family: HN, sans-serif, Arial; //HelveticaNeue, sans-serif, Arial replace with this once we get helvetica Neue
+  width: 100%;
+  height: auto;
+  background-color: @bgcolor;
+}
+
+//temporary
+div, span{
+  font-family: HN, sans-serif, Arial;
+}
+a {
+  text-decoration: none !important;
+}
+// End william mod
+
+@font-face{
+  font-family: HN;
+  src: url('/fonts/HelveticaNeue.otf');
+}
+
+@font-face{
+  font-family: HN-B;
+  src: url('/fonts/HelveticaNeue-Bold.otf');
+}
+
+@font-face{
+  font-family: HN-L;
+  src: url('/fonts/HelveticaNeue-Light.otf');
+}
+
+@font-face{
+  font-family: Gotham Book;
+  src: url('/fonts/GothamHTF-Book.ttf');
+}
+
+@font-face{
+  font-family: Gotham Bold;
+  src: url('/fonts/GothamHTF-Bold.ttf');
+}
+
+@font-face{
+  font-family: Gotham Black;
+  src: url('/fonts/GothamHTF-Black.ttf');
+}
+//Font Incorrect? Potentially not needed
+@font-face{
+  font-family: Gotham Book Italic;
+  src: url('/fonts/GothamHTF-Book-Italic.ttf');
+}
+
+@font-face{
+  font-family: Gotham Book Light;
+  src: url('/fonts/GothamHTF-Book-Light.ttf');
+}
+
+//Global Stylings
+.syn-text-center{
+  text-align: center;
+}
+
+.coming-soon{
+  width:100%;
+  height:100%;
+  background-image: @coming-soon;
+  background-size:100%;
+
+}
+
+.coming-soon-frame{
+  width:100%;
+  height:100%;
+  background-image: @coming-soon-frame;
+  background-size:100%;
+
+}
+
+
+.slideout-menu {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+  width: 256px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  display: none;
+}
+
+.slideout-panel {
+  position: relative;
+  z-index: 1;
+}
+
+.slideout-open,
+.slideout-open body,
+.slideout-open .slideout-panel {
+  overflow: hidden;
+}
+
+.slideout-open .slideout-menu {
+  display: block;
+}
+
+.noclick {
+  // For elements that shouldn't be highlightable
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+} // END .noclick
+
+
+.fi_body_container {
+  text-align:center;
+  width:100%;
+  position:relative;
+  font-family: HelveticaNeue;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  margin:0%;
+
+
+}
+.header_nav {
+
+  width: 100%;
+  height: 2.7%auto;
+  color: #FFFFFF;
+  background-color: #252525;
+  text-align: center;
+  margin:0%;
+  padding-bottom: 2%;
+  position: fixed;
+
+}
+.burger {
+  float:left;
+  padding-left: 10px;
+  padding-top: 18px;
+
+
+
+}
+.logo{
+  padding-top: 10px;
+
+
+}
+body {
+  margin:0%;
+}
+.search_header {
+  background-image: url('search_background.png');
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 30.4%;
+  margin-top: 0%;
+  color:#FFFFFF;
+  display:block;
+  padding-top: 5%
+
+
+}
+.search_header h1 {
+  font-size:24px;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 69px;
+  padding-left: 12px;
+  padding-right: 12px;
+
+
+
+
+}
+.search_header h2 {
+  font-size: 16px;
+  font-weight: lighter;
+  line-height: 18px;
+
+}
+.explore {
+
+  color:#000000;
+
+
+
+}
+.explore h1 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 18px;
+
+
+}
+.explore h2 {
+  font-size:16px;
+  font-weight: lighter;
+  line-height: 18px;
+
+// end of explore
+//Start of City Picture Panes
+//city pic 1 start
+}
+.citypic_1 {
+  background-image: url('citypic_1.png');
+  background-size: cover;
+  color:#FFFFFF;
+  margin-top: 0%;
+  display: block;
+  padding-bottom: 5%;
+
+
+
+}
+.citypic_1 h1 {
+font-size: 24px;
+font-weight: 300;
+
+padding-top: 98px;
+padding-bottom: 98px;
+padding-left: 10px;
+padding-right:10px;
+
+
+//city pic 2 start
+}
+.citypic_2 {
+  background-image: url('citypic_2.png');
+  background-size: cover;
+  margin-top: 0%;
+  display: block;
+  padding-top:5%;
+  padding-bottom:5%;
+
+
+}
+.citypic_2 h1 {
+  font-size: 24px;
+  font-weight: 300;
+
+  padding-top: 98px;
+  padding-bottom: 98px;
+  color:#FFFFFF;
+  padding-left: 10px;
+  padding-right:10px;
+
+//city pic 3 start
+
+}
+.citypic_3 {
+  background-image: url('citypic_3.png');
+  background-size: cover;
+  margin-top: 0%;
+  display: block;
+  padding-top:5%;
+
+
+//City Picture Pane end
+}
+.citypic_3 h1 {
+  font-size: 24px;
+  font-weight: lighter;
+
+  padding-top: 98px;
+  padding-bottom: 98px;
+  color:#FFFFFF;
+  padding-left: 10px;
+  padding-right:10px;
+
+
+
+}
+.features {
+
+  color:#000000;
+  margin-top: 0%;
+  display: block;
+
+
+}
+.features h1 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 18px;
+
+
+
+}
+.features h2 {
+  font-size:16px;
+  font-weight: lighter;
+  line-height: 18px;
+
+  padding-left: 50px;
+  padding-right: 50px;
+
+}
+.interactive {
+  background-image: url('search_background.png');
+  background-size: cover;
+  color:#FFFFFF;
+  margin-top: 0%;
+  display: block;
+  padding-bottom: 5%;
+
+
+}
+.interactive h1 {
+  font-size: 24px;
+  font-weight: lighter;
+
+  padding-top: 105px;
+  padding-bottom: 98px;
+  color:#FFFFFF;
+  padding-left: 10px;
+  padding-right:10px;
+
+
+}
+.tophund {
+  background-image: url('tophund.png');
+  background-size: cover;
+  color:#FFFFFF;
+  margin-top: 0%;
+  display: block;
+  padding-top: 5%;
+  padding-bottom: 5%;
+
+
+
+}
+.tophund h1 {
+  font-size: 24px;
+  font-weight: lighter;
+
+  padding-top: 98px;
+  padding-bottom: 98px;
+  color:#FFFFFF;
+  padding-left: 10px;
+  padding-right:10px;
+
+
+
+}
+.trending {
+  background-image: url('trending.png');
+  background-size: cover;
+  color:#FFFFFF;
+  margin-top: 0%;
+  display: block;
+  padding-top: 5%;
+  padding-bottom:5%;
+
+
+
+}
+.trending h1 {
+  font-size: 24px;
+  font-weight: lighter;
+
+  padding-top: 98px;
+  padding-bottom: 98px;
+  color:#FFFFFF;
+  padding-left: 10px;
+  padding-right:10px;
+
+
+
+}
+button {
+  outline: none;
+}
+.fi_mainsearch{
+  margin: 20px auto;
+  width:80%;
+  height:30px;
+  background-color: @white;
+  border-radius: 5px;
+  //box-shadow: 0 0 3px 3px rgba(48,152,255, 0.7);
+  display:inherit;
+
+  //position: relative;
+  &-text{
+    font-family:HN-L;
+    font-size: 14px;
+    width:83%;
+    height:100%;
+    color:@black;
+    text-align: left;
+    border: none;
+    border-radius: 5px;
+    padding-left:10px;
+  }
+  .fi_searchbtn{
+    width:17%;
+    height:100%;
+    background-color: @blue;
+    color:@white;
+    font-size:24px;
+    text-align:center;
+    float:right;
+    border:none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+}
+  // footer
+.sub_footer {
+  background-color: #282c2e;
+  width: 100%;
+  height: 1.4%;
+  color: #FFFFFF;
+  overflow:auto;
+  padding-top:10px;
+  padding-bottom:10px;
+
+}
+.sub_footer i {
+  opacity: .5;
+  float: right;
+  border-radius: 50%;
+  border-width: 1px;
+  border-color:  #959595;
+  border-style: solid;
+  width: 20px;
+  height: 20px;
+  border-spacing: 14px;
+  border-spacing:14px;
+
+
+}
+.footer {
+ background-color: #3d4144;
+ width: 100%;
+ height: 7.1%;
+
+
+
+}
