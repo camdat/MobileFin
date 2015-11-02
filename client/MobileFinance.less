@@ -161,12 +161,7 @@ a {
 .fi_body_container {
   text-align:center;
   width:100%;
-  position:relative;
   font-family: HelveticaNeue;
-  margin-top: 0%;
-  margin-bottom: 0%;
-  margin:0%;
-
 
 }
 .header_nav {
@@ -179,22 +174,62 @@ a {
   margin:0%;
   padding-bottom: 2%;
   position: fixed;
+  -webkit-transform: translateZ(0);
+  z-index:2000;
+
+
+
 
 }
 .burger {
   float:left;
-  padding-left: 10px;
+  padding-left: 15px;
   padding-top: 18px;
 
+}
+.menu {
+  background-color:#FeFFFF;
 
 
 }
-.logo{
+.menu-section {
+  margin: 25px 0;
+}
+
+.menu-section-title {
+  text-transform: uppercase;
+  color: #FFFFFF;
+  font-weight: 200;
+  font-size: 13px;
+  letter-spacing: 1px;
+  padding: 0 20px;
+  margin:0;
+}
+
+.menu-section-list {
+  padding:0;
+  margin: 10px 0;
+  list-style:none;
+}
+
+.menu-section-list a {
+  display: block;
+  padding: 10px 20px;
+}
+.panel
+{
+  text-align: left;
+  padding-top: 5px;
+  min-height: 100%;
+
+}
+
+.logo
+{
   padding-top: 10px;
-
-
 }
-body {
+body
+{
   margin:0%;
 }
 .search_header {
@@ -203,7 +238,6 @@ body {
   background-position: center center;
   width: 100%;
   height: 30.4%;
-  margin-top: 0%;
   color:#FFFFFF;
   display:block;
   padding-top: 5%
@@ -230,9 +264,10 @@ body {
 }
 .explore {
 
+  padding-top: 1px;
+  padding-bottom: 1px;
+  background-color: @white;
   color:#000000;
-
-
 
 }
 .explore h1 {
@@ -255,9 +290,9 @@ body {
   background-image: url('citypic_1.png');
   background-size: cover;
   color:#FFFFFF;
-  margin-top: 0%;
   display: block;
-  padding-bottom: 5%;
+  padding-top: 1%;
+  padding-bottom: 1%;
 
 
 
@@ -277,10 +312,9 @@ padding-right:10px;
 .citypic_2 {
   background-image: url('citypic_2.png');
   background-size: cover;
-  margin-top: 0%;
   display: block;
-  padding-top:5%;
-  padding-bottom:5%;
+  padding-top:1%;
+  padding-bottom:1%;
 
 
 }
@@ -300,9 +334,9 @@ padding-right:10px;
 .citypic_3 {
   background-image: url('citypic_3.png');
   background-size: cover;
-  margin-top: 0%;
   display: block;
-  padding-top:5%;
+  padding-top:1%;
+    overflow:auto;
 
 
 //City Picture Pane end
@@ -310,7 +344,6 @@ padding-right:10px;
 .citypic_3 h1 {
   font-size: 24px;
   font-weight: lighter;
-
   padding-top: 98px;
   padding-bottom: 98px;
   color:#FFFFFF;
@@ -322,9 +355,13 @@ padding-right:10px;
 }
 .features {
 
+
+  background-color: @white;
   color:#000000;
-  margin-top: 0%;
-  display: block;
+  padding-top: 1px;
+  padding-bottom: 1px;
+
+
 
 
 }
@@ -332,26 +369,23 @@ padding-right:10px;
   font-size: 24px;
   font-weight: 700;
   line-height: 18px;
-
-
-
 }
 .features h2 {
   font-size:16px;
-  font-weight: lighter;
+  font-weight: 300;
   line-height: 18px;
-
   padding-left: 50px;
   padding-right: 50px;
+
 
 }
 .interactive {
   background-image: url('search_background.png');
   background-size: cover;
   color:#FFFFFF;
-  margin-top: 0%;
   display: block;
-  padding-bottom: 5%;
+  padding-bottom: 1%;
+    overflow:auto;
 
 
 }
@@ -373,8 +407,8 @@ padding-right:10px;
   color:#FFFFFF;
   margin-top: 0%;
   display: block;
-  padding-top: 5%;
-  padding-bottom: 5%;
+  padding-top: 1%;
+  padding-bottom: 1%;
 
 
 
@@ -398,8 +432,8 @@ padding-right:10px;
   color:#FFFFFF;
   margin-top: 0%;
   display: block;
-  padding-top: 5%;
-  padding-bottom:5%;
+  padding-top: 1%;
+  padding-bottom:1%;
 
 
 
@@ -483,6 +517,7 @@ button {
  background-color: #3d4144;
  width: 100%;
  height: 7.1%;
+ text-align:center;
 
 
 
